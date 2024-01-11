@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar {
+    display: flex;
+    height: 50px;
+}
+
+.info-bar {
+    background-color: #eeded6;
+    width: 100%;
+}
+
+.info-bar2 {
+    background-color: #D7C3B8;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+.navbar-top {
+    
+}
