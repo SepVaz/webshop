@@ -9,19 +9,61 @@
 }
 
 .info-bar {
+    padding-top: 10px;
+    text-align: center;
     background-color: #eeded6;
     width: 100%;
 }
 
 .info-bar2 {
+    padding-top: 10px;
+    text-align: center;
     background-color: #D7C3B8;
     width: 100%;
 }
 
 nav {
-    display: flex;
+   
 }
 
 .navbar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
+
+.logo img {
+    width: 100px;
+}
+
+.search form input {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    width: 400px;
+    border-radius: 15px;
+    border: 1px solid rgb(224, 215, 215);
+    box-shadow: inset 1px 1px 3px rgb(202, 200, 200);
+    background-color: #fcf8f6;
+}
+
+.bx bx-search
+
+.nav-icons {
+    padding-right: 30px;
+    padding-top: 10px;
+    font-size: ;      
+}
+
+.nav-icons i {
+    font-size: 25px;
+    padding-right: 25px;
+    
+
+}
+
+.navbar-bot {
+    display: none;
+}
+
