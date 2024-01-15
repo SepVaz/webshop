@@ -116,16 +116,18 @@ nav .search form input {
 }
 
 .navbar-box a:hover, .dropdown:hover .dropbtn {
-  background-color: #e73b3b; /*tillfällig färg*/
+  transition: background-color 0.2s ease;
 }
 
 .dropdown-content {
-  display: none;
+  opacity: 0; /* Starta som osynlig */
+  visibility: hidden; /* Gör den icke-interaktiv när den är dold */
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  transition: opacity 0.3s, ease-in visibility 0s; /* Lägg till övergångseffekter */
 }
 
 .dropdown-content a {
@@ -140,8 +142,10 @@ nav .search form input {
 }
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  opacity: 1; /* Gör innehållet synligt */
+  visibility: visible; /* Gör det interaktivt */
 }
+
 
 .navbar-box a {
   color: black;
