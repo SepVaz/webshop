@@ -33,6 +33,10 @@ body {
   align-items: center;
 }
 
+.logo {
+  margin-left: 40px;
+}
+
 .logo img {
   width: 100px;
   margin: 20px;
@@ -44,6 +48,13 @@ nav {
 
 ul {
   list-style-type: none;
+}
+
+.favorit-container {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+
 }
 
 nav .search form {
@@ -84,10 +95,59 @@ nav .search form input {
   padding-right: 25px;
 }
 
-.navbar-bot {
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
+.bx-heart:active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.bx-cart-alt {
+  cursor: pointer;
+}
+
+.nav-icons a {
+  color: black;
+}
+
+
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 500px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: right 0.3s ease;
+  padding: 20px;
+  z-index: 1000;
+
+}
+
+#closeCartBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  font-size: larger;
+  background-color: white;
+}
+
+#closeCartBtn:active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.cart-panel p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: larger;
+  border-bottom: black solid 1px;
+}
+
+.bx-cart-alt:active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }
 
 .navbar-box {
@@ -149,14 +209,12 @@ nav .search form input {
 .navbar-box a {
   color: black;
   text-decoration: none;
-  letter-spacing: 2px;
-
 }
 
 .header-bar {
   width: 100%;
   height: 65px;
-  background-color: #e73b3b;
+  background-color: #9a2020;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,12 +248,18 @@ nav .search form input {
   position: absolute;
   top: 10px;
   right: 10px;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 .cards {
   position: relative;
 }
+
+.cards i {
+  z-index: 10;
+  cursor: pointer;
+}
+
 
 footer {
   background-color: #F9EFEA;
@@ -233,4 +297,21 @@ footer {
   margin-inline: 30px;
 }
 
-@media
+.about-container {
+  margin-top: 60px;
+  margin-bottom: 100px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: start; 
+  justify-content: center; 
+}
+
+.about-h1 {
+  margin-bottom: 30px;
+}
+
+.about-text {
+  max-width: 600px; 
+
+}
