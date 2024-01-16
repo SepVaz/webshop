@@ -3,7 +3,8 @@
   padding: 0;
 }
 
-html, body {
+html,
+body {
   height: 100vh;
 }
 
@@ -83,6 +84,12 @@ nav .search form input {
   padding-right: 25px;
 }
 
+.navbar-bot {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
 .navbar-box {
   list-style-type: none;
   display: flex;
@@ -91,11 +98,59 @@ nav .search form input {
   gap: 200px;
   font-size: 19px;
   text-transform: uppercase;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
+.navbar-box li {
+  float: left;
+}
+
+.navbar-box a,
+.dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+.dropdown-content {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(215, 195, 184, 0.97);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
+  z-index: 1;
+  width: 80%;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1; /* Gör innehållet synligt */
+  visibility: visible; /* Gör det interaktivt */
+}
+
+
 .navbar-box a {
- color: black;
- text-decoration: none;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+
 }
 
 .header-bar {
@@ -122,19 +177,20 @@ nav .search form input {
   padding: 20px;
 }
 
-.card-container .cards img{
- width: 350px;
- height: 500px;
- object-fit: cover;
- border: 1px solid; /* detta ska vi inte ha sen, bara nu för att det ska synas */
+.card-container .cards img {
+  width: 350px;
+  height: 500px;
+  object-fit: cover;
+  border: 1px solid;
+  /* detta ska vi inte ha sen, bara nu för att det ska synas */
 }
 
 .card-container .cards i {
- font-size: 35px;
- position: absolute;
- top: 10px;
- right: 10px;
- color: black;
+  font-size: 35px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
 }
 
 .cards {
@@ -162,7 +218,8 @@ footer {
   padding-bottom: 10px
 }
 
-.support a, .about a{
+.support a,
+.about a {
   color: black;
 }
 
