@@ -109,7 +109,6 @@ nav .search form input {
   color: black;
 }
 
-
 .cart-panel {
   position: fixed;
   top: 0;
@@ -177,7 +176,6 @@ nav .search form input {
   text-decoration: none;
 }
 
-
 .dropdown-content {
   visibility: hidden;
   position: absolute;
@@ -205,7 +203,6 @@ nav .search form input {
   opacity: 1; /* Gör innehållet synligt */
   visibility: visible; /* Gör det interaktivt */
 }
-
 
 .navbar-box a {
   color: black;
@@ -260,7 +257,6 @@ nav .search form input {
   z-index: 1;
   cursor: pointer;
 }
-
 
 footer {
   background-color: #F9EFEA;
