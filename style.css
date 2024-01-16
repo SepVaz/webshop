@@ -85,8 +85,9 @@ nav .search form input {
 }
 
 .navbar-bot {
-  /* background-color: #333; */
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .navbar-box {
@@ -108,30 +109,28 @@ nav .search form input {
 
 .navbar-box a,
 .dropbtn {
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
-.navbar-box a:hover, .dropdown:hover .dropbtn {
-  transition: background-color 0.2s ease;
-}
 
 .dropdown-content {
-  opacity: 0; /* Starta som osynlig */
-  visibility: hidden; /* Gör den icke-interaktiv när den är dold */
+  visibility: hidden;
   position: absolute;
-  background-color: #ffffff;
+  background-color: rgba(215, 195, 184, 0.97);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.7);
   z-index: 1;
-  transition: opacity 0.3s, ease-in visibility 0s; /* Lägg till övergångseffekter */
+  width: 80%;
+  height: 450px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   display: block;
   text-decoration: none;
@@ -150,6 +149,8 @@ nav .search form input {
 .navbar-box a {
   color: black;
   text-decoration: none;
+  letter-spacing: 2px;
+
 }
 
 .header-bar {
