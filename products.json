@@ -2,72 +2,72 @@
     "products": [
         {
             "id": 1,
-            "title": "Vit bomullströja",
-            "price": "599kr",
+            "title": "Ribbstickad polotröja",
+            "price": "599",
             "category": "aa",
             "description": "Bomulls tröja",
             "image": "images/bild1.jpg"
         },
         {
             "id": 2,
-            "title": "sd",
-            "price": "dd",
+            "title": "Cargobyxa",
+            "price": "349",
             "category": "aa",
             "description": "sdasd",
             "image": "images/bild2.jpg"
         },
         {
             "id": 3,
-            "title": "sd",
-            "price": "dd",
+            "title": "Top med meshärmar",
+            "price": "249",
             "category": "aa",
-            "description": "sdasd",
+            "description": "",
             "image": "images/bild3.jpg"
         },
         {
             "id": 4,
-            "title": "sd",
-            "price": "dd",
+            "title": "T-shirt med motiv",
+            "price": "149",
             "category": "aa",
             "description": "sdasd",
             "image": "images/bild4.jpg"
         },
         {
             "id": 5,
-            "title": "sd",
-            "price": "dd",
-            "category": "aa",
+            "title": "Mom jeans",
+            "price": "449",
+            "category": "",
             "description": "sdasd",
             "image": "images/bild5.jpg"
         },
         {
             "id": 6,
-            "title": "sd",
-            "price": "dd",
+            "title": "Svarta jeans",
+            "price": "699",
             "category": "aa",
             "description": "sdasd",
             "image": "images/bild6.jpg"
         },
         {
             "id": 7,
-            "title": "sd",
-            "price": "dd",
+            "title": "Skorta ",
+            "price": "399",
             "category": "aa",
             "description": "sdasd",
             "image": "images/bild7.jpg"
         },
         {
             "id": 10,
-            "title": "sd",
-            "price": "500 kr",
+            "title": "Kappa",
+            "price": "599",
             "category": "Tröjor",
             "description": "Ful vit tröja",
             "image": "images/bild8.jpg"
         },
         {
             "id": 9,
-            "title": "sd",
-            "price": "dd",
+            "title": "Blazer",
+            "price": "549",
             "category": "aa",
             "description": "sdasd",
             "image": "images/bild9.jpg"

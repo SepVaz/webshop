@@ -33,16 +33,28 @@ fetch('products.json')
             image.src = product.image;
             productDiv.appendChild(image);
 
+            const titleDiv = document.createElement("div");
+            titleDiv.textContent = product.title;
+            productDiv.appendChild(titleDiv);
+
+            const priceDiv = document.createElement("div");
+            priceDiv.textContent = "Pris: " + product.price + " kr";
+            productDiv.appendChild(priceDiv);
+
             cardContainer.appendChild(productDiv);
 
-        
             image.addEventListener("click", function () {
-              
                 updateContentForProduct(product);
             });
         });
     })
     .catch(error => console.error("Det uppstod ett fel:", error));
+
+/* function updateContentForProduct(product) {
+    // Uppdatera innehållet baserat på den valda produkten (t.ex. visa i en modal)
+    console.log("Produktinformation: ", product);
+} */
+
 
    
 function updateContentForProduct(product) {
@@ -66,10 +78,11 @@ function updateContentForProduct(product) {
     detailedInfo.appendChild(detailedName);
 
     const detailedPrice = document.createElement("p");
-    detailedPrice.textContent = `${product.price}`;
+    detailedPrice.textContent = `${product.price}` + " kr";
     detailedInfo.appendChild(detailedPrice);
 
     const addToCartButton = document.createElement("button");
+    addToCartButton.className = "addButton"
     addToCartButton.textContent = "Add to Cart";
     addToCartButton.addEventListener("click", function () {
         
@@ -78,6 +91,7 @@ function updateContentForProduct(product) {
     detailedInfo.appendChild(addToCartButton);
 
     const backButton = document.createElement("button");
+    backButton.className = "backButton"
     backButton.textContent = "Back to Products";
     backButton.addEventListener("click", function () {
        
@@ -105,6 +119,14 @@ function fetchProducts() {
                 const image = document.createElement("img");
                 image.src = product.image;
                 productDiv.appendChild(image);
+
+                const titleDiv = document.createElement("div");
+                titleDiv.textContent = product.title;
+                productDiv.appendChild(titleDiv);
+
+                const priceDiv = document.createElement("div");
+                priceDiv.textContent = "Pris: " + product.price + " kr";
+                productDiv.appendChild(priceDiv);
                 
                 image.addEventListener("click", function () {
                    
