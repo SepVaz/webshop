@@ -231,6 +231,9 @@ nav .search form input {
   margin-top: 100px;
   margin-bottom: 100px;
   padding: 20px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .card-container .cards img {
@@ -311,4 +314,10 @@ footer {
 .about-text {
   max-width: 600px; 
 
+}
+
+
+.detailed-image {
+  width: 350px;
+  height: 500px;
 }
