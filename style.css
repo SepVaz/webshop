@@ -240,8 +240,6 @@ nav .search form input {
   width: 350px;
   height: 500px;
   object-fit: cover;
-  border: 1px solid;
-  /* detta ska vi inte ha sen, bara nu för att det ska synas */
 }
 
 .card-container .cards i {
@@ -252,8 +250,13 @@ nav .search form input {
   color: rgb(0, 0, 0);
 }
 
+.heart-toggle {
+  color: red;
+}
+
 .cards {
   position: relative;
+  cursor: pointer;
 }
 
 .cards i {
@@ -336,7 +339,7 @@ footer {
   position: absolute;
   left: -1000px;
   top: 10px;
-
+  cursor: pointer;
 }
 
 .addButton {
@@ -351,3 +354,5 @@ footer {
   font-size: 25px;
   padding-top: 10px;
 }
+
+

@@ -1,7 +1,7 @@
 const cartPanel = document.getElementById("cartPanel");
 const closeCartBtn = document.getElementById("closeCartBtn");
 const cartIcon = document.querySelector(".bx-cart-alt");
-const cardHeartIcons = document.querySelectorAll(".bxs-heart");
+const cardHeartIcons = document.querySelectorAll(".bx-heart");
 const cardContainer = document.querySelector(".card-container")
 
 cartIcon.addEventListener("click", function () {
@@ -12,11 +12,13 @@ closeCartBtn.addEventListener("click", function () {
     cartPanel.style.right = "-100%";
 });
 
-cardHeartIcons.forEach(icon => {
+
+
+/* heartIcon.forEach(icon => {
     icon.addEventListener("click", function () {
         this.style.color = this.style.color === 'red' ? '' : 'red';
     });
-});
+}); */
 
 
 
@@ -37,11 +39,25 @@ fetch('products.json')
             titleDiv.textContent = product.title;
             productDiv.appendChild(titleDiv);
 
+            const heartIcon = document.createElement("i");
+            heartIcon.className = "bx bx-heart";
+
+            heartIcon.addEventListener("click", function() {
+                if (this.style.color === 'red') {
+                    this.style.color = '';
+                } else {
+                    this.style.color = 'red';
+                }
+            });
+
+            productDiv.appendChild(heartIcon);
+
             const priceDiv = document.createElement("div");
             priceDiv.textContent = "Pris: " + product.price + " kr";
             productDiv.appendChild(priceDiv);
 
             cardContainer.appendChild(productDiv);
+            
 
             image.addEventListener("click", function () {
                 updateContentForProduct(product);
@@ -127,6 +143,19 @@ function fetchProducts() {
                 const priceDiv = document.createElement("div");
                 priceDiv.textContent = "Pris: " + product.price + " kr";
                 productDiv.appendChild(priceDiv);
+
+                const heartIcon = document.createElement("i");
+                heartIcon.className = "bx bx-heart";
+    
+                heartIcon.addEventListener("click", function() {
+                    if (this.style.color === 'red') {
+                        this.style.color = '';
+                    } else {
+                        this.style.color = 'red';
+                    }
+                });
+    
+                productDiv.appendChild(heartIcon);
                 
                 image.addEventListener("click", function () {
                    
