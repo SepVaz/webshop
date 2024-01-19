@@ -319,6 +319,9 @@ footer {
 
 }
 
+.cart-product-image {
+  width: 100px;
+}
 
 .detailed-image {
   width: 350px;
