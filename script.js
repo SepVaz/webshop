@@ -119,6 +119,7 @@ function updateContentForProduct(product) {
 }
 
 let cart = []
+let itemQuantity = "";
 
 function addToCart(product) {
     cart.push(product);
@@ -129,7 +130,16 @@ function updateCartPanel() {
     const cartPanel = document.getElementById('cartPanel');
     cartPanel.innerHTML = '';
 
+    const closeCartBtn = document.createElement("button");
+    closeCartBtn.id = "closeCartBtn";
+    closeCartBtn.textContent = "X";
+    closeCartBtn.addEventListener("click", function () {
+        cartPanel.style.right = "-100%";
+    })
+    cartPanel.appendChild(closeCartBtn);
+
     cart.forEach(product => {
+
         const productDiv = document.createElement('div');
         productDiv.className = 'cart-product';
 
@@ -141,10 +151,21 @@ function updateCartPanel() {
 
         const productInfo = document.createElement('div');
         productInfo.textContent = `${product.title} - Pris: ${product.price} kr`;
-        productInfo.className = 'cart-product-info'; 
+        productInfo.className = 'cart-product-info';
         productDiv.appendChild(productInfo);
 
         cartPanel.appendChild(productDiv);
+
+        const removeBtn = document.createElement("button");
+        removeBtn.className = "removeBtn";
+        removeBtn.textContent = "Ta bort";
+        removeBtn.addEventListener("click", function () {
+            productDiv.textContent = itemQuantity--;
+            productDiv.style = "hidden" //ej färdig, behöver finslipas
+        })
+        productDiv.appendChild(removeBtn)
+
+
     });
 }
 
