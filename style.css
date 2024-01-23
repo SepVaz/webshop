@@ -217,6 +217,7 @@ nav .search form input {
   align-items: center;
   justify-content: center;
   margin-top: 15px;
+  margin-bottom: 40px;
 }
 
 .header-bar h3 {
@@ -240,6 +241,11 @@ nav .search form input {
   width: 350px;
   height: 500px;
   object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.card-container .cards img:hover {
+  transform: scale(1.2);
 }
 
 .card-container .cards i {
@@ -341,7 +347,7 @@ footer {
   font-size: 25px;
   padding-top: 5px;
   position: absolute;
-  left: -1000px;
+  left: -500px;
   top: 10px;
   cursor: pointer;
 }
