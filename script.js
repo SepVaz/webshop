@@ -1,8 +1,20 @@
 const cartPanel = document.getElementById("cartPanel");
 const closeCartBtn = document.getElementById("closeCartBtn");
+const closeLoginBtn = document.getElementById("closeLoginBtn")
 const cartIcon = document.querySelector(".bx-cart-alt");
 const cardHeartIcons = document.querySelectorAll(".bx-heart");
-const cardContainer = document.querySelector(".card-container")
+const cardContainer = document.querySelector(".card-container");
+const userIcon = document.querySelector(".bx-user");
+const userPanel = document.getElementById("userPanel")
+
+userIcon.addEventListener("click", function () {
+    userPanel.style.right = "0";
+});
+
+closeLoginBtn.addEventListener("click", function () {
+    userPanel.style.right = "-100%";
+});
+
 
 cartIcon.addEventListener("click", function () {
     cartPanel.style.right = "0";

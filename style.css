@@ -55,7 +55,6 @@ ul {
   margin: 40px;
   display: flex;
   justify-content: center;
-
 }
 
 nav .search form {
@@ -101,7 +100,46 @@ nav .search form input {
   transition: transform 0.2s ease;
 }
 
-.bx-cart-alt {
+.login-container, .submit-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-text, .login-password, .login-btn, .register-btn{
+  margin-top: 15px;
+  height: 50px;
+  margin-bottom: 15px;
+  text-indent: 10px;
+}
+
+input.checkbox { 
+  height: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+}
+
+.login-btn{
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  
+}
+.remember-text {
+  height: ;
+}
+
+.forgot-psw{
+  padding-top: 0px;
+}
+
+.bx-cart-alt, .bx-user {
   cursor: pointer;
 }
 
@@ -109,7 +147,7 @@ nav .search form input {
   color: black;
 }
 
-.cart-panel {
+.cart-panel, .user-panel {
   position: fixed;
   top: 0;
   right: -100%;
@@ -123,7 +161,7 @@ nav .search form input {
 
 }
 
-#closeCartBtn {
+#closeCartBtn, #closeLoginBtn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -138,11 +176,11 @@ nav .search form input {
   transition: transform 0.2s ease;
 }
 
-.cart-panel p {
+.cart-panel p, .user-panel p {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: larger;
-  border-bottom: black solid 1px;
+  border-bottom: rgb(228, 220, 220) solid 1px;
 }
 
 .bx-cart-alt:active {
