@@ -343,6 +343,11 @@ footer {
 
 .socials i {
   margin-inline: 30px;
+  
+}
+
+.socials a {
+  color: black;
 }
 
 .about-container {
