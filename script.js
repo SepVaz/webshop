@@ -25,7 +25,6 @@ closeCartBtn.addEventListener("click", function () {
 });
 
 
-
 /* heartIcon.forEach(icon => {
     icon.addEventListener("click", function () {
         this.style.color = this.style.color === 'red' ? '' : 'red';
