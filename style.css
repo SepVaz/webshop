@@ -33,9 +33,11 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .burger {
-display: none;
+  display: none;
 }
+
 .burger img {
   width: 25px;
   margin-left: 30px;
@@ -93,6 +95,7 @@ nav .search form input {
   padding-right: 30px;
   padding-top: 10px;
 }
+
 .nav-icons .search-icon {
   display: none;
 }
@@ -103,6 +106,11 @@ nav .search form input {
 }
 
 .bx-heart:active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}
+
+.bx-user:active {
   transform: scale(1.2);
   transition: transform 0.2s ease;
 }
@@ -304,6 +312,8 @@ input.checkbox {
   transform: scale(1.2);
 }
 
+
+
 .card-container .cards i {
   font-size: 35px;
   position: absolute;
@@ -427,32 +437,140 @@ footer {
   padding-top: 10px;
 }
 
-@media screen and (max-width: 800px) {
-  .body-container {
-    /* width: 80%; */
+@media screen and (max-width: 1500px) {
+
+  .navbar-box {
+    gap: 100px;
+  
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .navbar-box {
+    gap: 50px;
+  
   }
 
-  .burger {
-    display: block;
-    }
   nav .search form input {
     display: none;
   }
- nav .search form i {
+
+  nav .search form i {
     display: none;
   }
-  
+
   .logo img {
     width: 60px;
   }
-  .navbar-box {
-    display: none;
-  }
+
   .nav-icons .search-icon {
     display: block;
   }
 
-  .info-bar, .info-bar2 {
-    font-size: 14px ;
+  .info-bar,
+  .info-bar2 {
+    font-size: 14px;
+  }
+
+  .card-container .cards img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .cart-panel,
+  .user-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  nav .search form input {
+    display: none;
+  }
+
+  nav .search form i {
+    display: none;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .navbar-box {
+    display: none;
+  }
+
+  .nav-icons .search-icon {
+    display: block;
+  }
+
+  .info-bar,
+  .info-bar2 {
+    font-size: 14px;
+  }
+
+  .card-container .cards img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+
+  .cart-panel,
+  .user-panel {
+    position: fixed;
+    top: 0;
+    right: -1000%;
+    width: 300px;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  nav .search form input {
+    display: none;
+  }
+
+  nav .search form i {
+    display: none;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  .navbar-box {
+    display: none;
+  }
+
+  .nav-icons .search-icon {
+    display: block;
+  }
+
+  .info-bar,
+  .info-bar2 {
+    font-size: 14px;
+  }
+
+  .card-container .cards img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
   }
 }
