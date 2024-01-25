@@ -18,14 +18,14 @@ body {
   padding-top: 15px;
   text-align: center;
   background-color: #eeded6;
-  width: 100%;
+  width: 50%;
 }
 
 .info-bar2 {
   padding-top: 15px;
   text-align: center;
   background-color: #d7c3b8;
-  width: 100%;
+  width: 50%;
 }
 
 .navbar-top {
@@ -33,9 +33,12 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  margin-left: 40px;
+.burger {
+display: none;
+}
+.burger img {
+  width: 25px;
+  margin-left: 30px;
 }
 
 .logo img {
@@ -86,8 +89,12 @@ nav .search form input {
 }
 
 .nav-icons {
+  display: flex;
   padding-right: 30px;
   padding-top: 10px;
+}
+.nav-icons .search-icon {
+  display: none;
 }
 
 .nav-icons i {
@@ -100,7 +107,8 @@ nav .search form input {
   transition: transform 0.2s ease;
 }
 
-.login-container, .submit-container {
+.login-container,
+.submit-container {
   display: flex;
   flex-direction: column;
 }
@@ -111,35 +119,40 @@ nav .search form input {
   align-items: center;
 }
 
-.login-text, .login-password, .login-btn, .register-btn{
+.login-text,
+.login-password,
+.login-btn,
+.register-btn {
   margin-top: 15px;
   height: 50px;
   margin-bottom: 15px;
   text-indent: 10px;
 }
 
-input.checkbox { 
+input.checkbox {
   height: 15px;
   margin-top: 10px;
   margin-bottom: 15px;
   margin-right: 5px;
 }
 
-.login-btn{
+.login-btn {
   background-color: black;
   color: white;
   margin-top: 10px;
-  
+
 }
+
 .remember-text {
   height: ;
 }
 
-.forgot-psw{
+.forgot-psw {
   padding-top: 0px;
 }
 
-.bx-cart-alt, .bx-user {
+.bx-cart-alt,
+.bx-user {
   cursor: pointer;
 }
 
@@ -147,7 +160,8 @@ input.checkbox {
   color: black;
 }
 
-.cart-panel, .user-panel {
+.cart-panel,
+.user-panel {
   position: fixed;
   top: 0;
   right: -100%;
@@ -161,7 +175,8 @@ input.checkbox {
 
 }
 
-#closeCartBtn, #closeLoginBtn {
+#closeCartBtn,
+#closeLoginBtn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -176,7 +191,8 @@ input.checkbox {
   transition: transform 0.2s ease;
 }
 
-.cart-panel p, .user-panel p {
+.cart-panel p,
+.user-panel p {
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: larger;
@@ -219,7 +235,7 @@ input.checkbox {
   position: absolute;
   background-color: rgba(255, 255, 255);
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
   z-index: 2;
   width: 100%;
   height: 450px;
@@ -238,8 +254,10 @@ input.checkbox {
 }
 
 .dropdown:hover .dropdown-content {
-  opacity: 1; /* Gör innehållet synligt */
-  visibility: visible; /* Gör det interaktivt */
+  opacity: 1;
+  /* Gör innehållet synligt */
+  visibility: visible;
+  /* Gör det interaktivt */
 }
 
 .navbar-box a {
@@ -343,7 +361,7 @@ footer {
 
 .socials i {
   margin-inline: 30px;
-  
+
 }
 
 .socials a {
@@ -353,11 +371,11 @@ footer {
 .about-container {
   margin-top: 60px;
   margin-bottom: 100px;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  text-align: start; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: start;
+  justify-content: center;
 }
 
 .about-h1 {
@@ -365,7 +383,7 @@ footer {
 }
 
 .about-text {
-  max-width: 600px; 
+  max-width: 600px;
 
 }
 
@@ -379,7 +397,8 @@ footer {
 }
 
 .detailed-view {
-  position: relative; /* Set the position of the parent to relative */
+  position: relative;
+  /* Set the position of the parent to relative */
 }
 
 .backButton {
@@ -408,4 +427,32 @@ footer {
   padding-top: 10px;
 }
 
+@media screen and (max-width: 800px) {
+  .body-container {
+    /* width: 80%; */
+  }
 
+  .burger {
+    display: block;
+    }
+  nav .search form input {
+    display: none;
+  }
+ nav .search form i {
+    display: none;
+  }
+  
+  .logo img {
+    width: 60px;
+  }
+  .navbar-box {
+    display: none;
+  }
+  .nav-icons .search-icon {
+    display: block;
+  }
+
+  .info-bar, .info-bar2 {
+    font-size: 14px ;
+  }
+}
