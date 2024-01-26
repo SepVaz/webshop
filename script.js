@@ -6,6 +6,7 @@ const cardHeartIcons = document.querySelectorAll(".bx-heart");
 const cardContainer = document.querySelector(".card-container");
 const userIcon = document.querySelector(".bx-user");
 const userPanel = document.getElementById("userPanel")
+const loginBtn = document.querySelector(".login-btn")
 
 userIcon.addEventListener("click", function () {
     userPanel.style.right = "0";
@@ -24,12 +25,10 @@ closeCartBtn.addEventListener("click", function () {
     cartPanel.style.right = "-100%";
 });
 
+loginBtn.addEventListener("click", function () {
+    userPanel.style.right = "-100%";
+});
 
-/* heartIcon.forEach(icon => {
-    icon.addEventListener("click", function () {
-        this.style.color = this.style.color === 'red' ? '' : 'red';
-    });
-}); */
 
 
 
@@ -82,6 +81,10 @@ fetch('products.json')
     console.log("Produktinformation: ", product);
 } */
 
+const storedUsername = localStorage.getItem("username");
+const favoriterHeader = document.querySelector("info-bar");
+ 
+favoriterHeader.innerText += ` ${storedUsername}`;
 
 function updateContentForProduct(product) {
 

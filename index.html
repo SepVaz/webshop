@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Konini Webshop">
+    <meta name="keywords" content="Womens clothing, shopping, woman, for her, dam, klänning, kvinna">
+    <meta name="author" content="Hjärnkontoret">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koninishop</title>
     <link rel="stylesheet" href="style.css">
@@ -26,11 +29,11 @@
 
         <nav>
             <div class="navbar-top">
-<div class="burger">
-    <img src="images/hamburger-icon.webp" alt="hamburger-icon">
-</div>
+                <div class="burger">
+                    <img src="images/hamburger-icon.webp" alt="hamburger-icon">
+                </div>
                 <div class="logo">
-                    <a href="index.html"><img src="images/logo.png" alt="bild på logga"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="konini logo"></a>
                 </div>
 
                 <div class="search">
@@ -45,13 +48,14 @@
                     <div class="search-icon"><i class='bx bx-search'></i></div>
                     <i class='bx bx-user'></i>
                     <div id="userPanel" class="user-panel">
-                        
+
                         <p class="login-title">Logga in</p>
                         <button id="closeLoginBtn">X</button>
                         <form class="loginForm">
                             <div class="login-container">
-                                <label for="email"></label>
-                                <input type="text" class="login-text" placeholder="Email" name="email" required>
+                                <label for="username"></label>
+                                <input type="text" class="login-text" placeholder="Användarnamn" name="text"
+                                    minlength="3" maxlength="10" required>
 
                                 <label for="password"></label>
                                 <input type="password" class="login-password" placeholder="Lösenord" name="password"
