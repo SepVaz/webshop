@@ -2,7 +2,7 @@
     "products": [
         {
             "id": 1,
-            "title": "Ribbstickad polotröja",
+            "title": "Svarta jeans",
             "price": "599",
             "category": "aa",
             "description": "Bomulls tröja",
@@ -42,7 +42,7 @@
         },
         {
             "id": 6,
-            "title": "Svarta jeans",
+            "title": "Ribbstickad polotröja",
             "price": "699",
             "category": "aa",
             "description": "sdasd",
@@ -75,7 +75,7 @@
 
         {
             "id": 11,
-            "title": "Blazer",
+            "title": " Sammetsklänning mini",
             "price": "549",
             "category": "aa",
             "description": "sdasd",

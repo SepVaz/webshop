@@ -48,6 +48,7 @@ fetch('products.json')
 
             const titleDiv = document.createElement("div");
             titleDiv.textContent = product.title;
+            titleDiv.style.fontWeight = "bold";
             productDiv.appendChild(titleDiv);
 
             const heartIcon = document.createElement("i");
@@ -65,6 +66,7 @@ fetch('products.json')
 
             const priceDiv = document.createElement("div");
             priceDiv.textContent = "Pris: " + product.price + " kr";
+           priceDiv.style.fontWeight = "bold";
             productDiv.appendChild(priceDiv);
 
             cardContainer.appendChild(productDiv);

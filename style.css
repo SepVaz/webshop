@@ -45,7 +45,8 @@ body {
 
 .logo img {
   width: 100px;
-  margin: 20px;
+  height: 55px;
+  margin: 25px;
 }
 
 nav {
@@ -57,9 +58,10 @@ ul {
 }
 
 .favorit-container {
-  margin: 40px;
+  margin: 200px;
   display: flex;
   justify-content: center;
+  
 }
 
 nav .search form {
@@ -148,11 +150,6 @@ input.checkbox {
   background-color: black;
   color: white;
   margin-top: 10px;
-
-}
-
-.remember-text {
-  height: ;
 }
 
 .forgot-psw {
@@ -180,7 +177,6 @@ input.checkbox {
   transition: right 0.3s ease;
   padding: 20px;
   z-index: 1000;
-
 }
 
 #closeCartBtn,
@@ -439,7 +435,6 @@ footer {
 
   .navbar-box {
     gap: 100px;
-
   }
 }
 
@@ -447,7 +442,6 @@ footer {
 
   .navbar-box {
     gap: 50px;
-
   }
 
   nav .search form input {
@@ -529,6 +523,13 @@ footer {
     gap: 100px;
   }
 
+  .info-bar{
+    padding-top: 10px;
+  }
+
+  .frakt {
+    white-space: pre;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -559,10 +560,6 @@ footer {
     display: none;
   }
 
-  .logo img {
-    width: 60px;
-  }
-
   .navbar-box {
     display: none;
   }
@@ -581,4 +578,5 @@ footer {
     height: 300px;
     object-fit: cover;
   }
+
 }
