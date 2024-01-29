@@ -74,17 +74,12 @@ fetch('products.json')
             });
         });
     })
-    /* .catch(error => console.error("Det uppstod ett fel:", error)); */
 
-/* function updateContentForProduct(product) {
-    // Uppdatera innehållet baserat på den valda produkten (t.ex. visa i en modal)
-    console.log("Produktinformation: ", product);
-} */
 
 const storedUsername = localStorage.getItem("username");
 const favoriterHeader = document.querySelector("info-bar");
  
-favoriterHeader.innerText += ` ${storedUsername}`;
+/* favoriterHeader.innerText += ` ${storedUsername}`; */
 
 function updateContentForProduct(product) {
 

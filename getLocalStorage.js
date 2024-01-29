@@ -24,7 +24,7 @@ const storedUsername = localStorage.getItem("username");
 displayUsername.textContent = `${storedUsername}:`
 } */
 
-___________
+
 
 /* // Hämta referenser till element
 const loginForm = document.querySelector(".loginForm"); // Antag att ditt formulär har id="loginForm"
