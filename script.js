@@ -43,6 +43,7 @@ fetch('products.json')
 
             const image = document.createElement("img");
             image.src = product.image;
+            image.alt = product.title;
             productDiv.appendChild(image);
 
             const titleDiv = document.createElement("div");

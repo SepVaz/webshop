@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function showFavorites() {
     let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
-    const container = document.querySelector('.favorit-container');
+    let container = document.querySelector('.favorit-container');
 
     // Kontrollera om det finns favoriter
     if(favorites.length === 0) {
@@ -37,4 +37,4 @@ function showFavorites() {
 }
 
 
-console.log(localStorage);
+/* console.log(localStorage); */

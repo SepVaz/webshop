@@ -303,8 +303,8 @@ input.checkbox {
 }
 
 .card-container .cards img {
-  width: 250px;
-  height: 400px;
+  width: 350px;
+  height: 500px;
   object-fit: cover;
   transition: all 0.3s ease;
 }

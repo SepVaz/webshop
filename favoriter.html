@@ -36,7 +36,7 @@
 
                 <div class="search">
                     <form>
-                        <input type="text" name="" id="" placeholder="Sök">
+                        <input type="text" id="sök" placeholder="Sök">
                         <button><i class='bx bx-search'></i></button>
                     </form>
                 </div>
@@ -49,11 +49,12 @@
                         <button id="closeLoginBtn">X</button>
                         <form>
                             <div class="login-container">
-                                <label for="email"></label>
-                                <input type="text" class="login-text" placeholder="Email" name="email" required>
+                                <label for="username"></label>
+                                <input type="text" id="username" class="login-text" placeholder="Användarnamn" name="text"
+                                    minlength="3" maxlength="10" autocomplete="given-name" required>
 
                                 <label for="password"></label>
-                                <input type="password" class="login-password" placeholder="Lösenord" name="password" required>
+                                <input type="password" id="password" class="login-password" placeholder="Lösenord" name="password" required>
                             </div>
                             <div class="forgot-container">
                                 <label><input type="checkbox" class="checkbox" checked="checked" name="remember"><span class="remember-text">Kom ihåg mig</span></label>
