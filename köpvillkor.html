@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Konini Webshop">
+    <meta name="keywords" content="Womens clothing, shopping, woman, for her, dam, klänning, kvinna">
+    <meta name="author" content="Hjärnkontoret">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koninishop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="getLocalStorage.js" defer></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="body-container">
+        <div class="top-bar">
+            <div class="info-bar">
+                Leverans inom 1-3 dagar. Fri frakt över 499 kr
+            </div>
+            <div class="info-bar2">
+                Betala med Klarna!
+            </div>
+        </div>
+
+        <nav>
+            <div class="navbar-top">
+
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt="konini logo"></a>
+                </div>
+
+                <div class="search">
+                    <form>
+                        <input type="text" id="sök" placeholder="Sök">
+                        <button><i class='bx bx-search'></i></button>
+                    </form>
+                </div>
+
+                <div class="nav-icons">
+                    <p class="displayUsername"></p>
+                    <i class='bx bx-user'></i>
+                    <div id="userPanel" class="user-panel">
+                        <p class="login-title">Logga in</p>
+                        <button id="closeLoginBtn">X</button>
+                        <form class="loginForm">
+                            <div class="login-container">
+                                <label for="username"></label>
+                                <input type="text" id="username" class="login-text" placeholder="Användarnamn" name="text"
+                                    minlength="3" maxlength="10" autocomplete="given-name" required>
+
+                                <label for="password"></label>
+                                <input type="password" id="password" class="login-password" placeholder="Lösenord" name="password" required>
+                            </div>
+                            <div class="forgot-container">
+                                <label><input type="checkbox" class="checkbox" checked="checked" name="remember"><span class="remember-text">Kom ihåg mig</span></label>
+                                <span class="forgot-psw"><a href="#">Glömt lösenord?</a></span>
+                            </div>
+                            <div class="submit-container">
+                                <button type="submit" class="login-btn">Logga in</button>
+                                <button type="submit" class="register-btn">Skapa konto</button>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="favoriter.html"><i class='bx bx-heart'></i></a>
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+                <div id="cartPanel" class="cart-panel">
+                    <p>Din varukorg är tom.</p>
+                    <button id="closeCartBtn">X</button>
+                </div>
+            </div>
+
+    </div>
+
+    <div class="navbar-bot">
+        <ul class="navbar-box">
+            <li><a href="#">Nyheter</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">Kategorier</a>
+                <div class="dropdown-content">
+                    <a href="#">Klänningar</a>
+                    <a href="#">Blusar</a>
+                    <a href="#">Toppar</a>
+                    <a href="#">Kjolar</a>
+                    <a href="#">Byxor</a>
+                    <a href="#">Shorts</a>
+                    <a href="#">Jumpsuits</a>
+                    <a href="#">Kimonos</a>
+                    <a href="#">Basplagg</a>
+                </div>
+            </li>
+            <li><a href="#">REA</a></li>
+            <li class="dropdown"><a href="#" class="dropbtn">Märken</a>
+                <div class="dropdown-content">
+                    <a href="#">
+                        <h3>Modström</h3> Modström’s distinct high-street fashion is feminine with a raw touch and
+                        contemporary edge, and they are constantly designing new pieces to stay at the top of their
+                        game. Over the years, they have achieved great success on the fashion scenes by making the
+                        latest trends readily available to women everywhere.
+
+                        Konini Agenturer is the Swedish distributor for Modström.
+                    </a>
+                    <a href="#">
+                        <h3>Orion London</h3> Orion London’s mission is to create ready-to-wear, high quality garments
+                        that have been influenced by the current trends with a small nod to retro culture. Their
+                        signature prints combine elements of vintage, nature and floral designs to create truly
+                        head-turning designs that would make a welcome addition to any woman’s wardrobe.
+
+                        Konini Agenturer is the Scandinavian distributor for Orion London.
+                    </a>
+                </div>
+            </li>
+            <li><a href="#">Inspiration</a></li>
+        </ul>
+    </div>
+    </nav>
+
+    <header>
+        <div class="header-bar">
+            <h3>Winter Sale! Upp Till 60% Rabatt</h3>
+        </div>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <h1 class="about-h1">KÖPVILLKOR</h1>
+            <div class="about-text">
+                <p>Köpvillkor
+                    KÖPVILLKOR KONINI SHOP <br>
+                    ORG.NR. 556989-6292 (KONINI AGENTURER AB) <br><br>
+                    
+                    Allmänna villkor <br>
+                    Vi följer såväl konsumentköplagen som distansavtalslagen. För att genomföra en beställning måste du vara myndig eller ha målsmans medgivande. <br><br>
+                    
+                    Beställning <br>
+                    Din beställning är bindande. Genom att göra en beställning hos oss godkänner du våra köp & leveransvillkor. Har du gjort en beställning av misstag ber vi att du kontaktar oss så fort som möjligt. <br><br>
+                    
+                    Priser <br>
+                    Alla priser anges inklusive svensk moms. Eventuella erbjudanden gäller så långt lagret räcker om inte annat anges. <br><br>
+                    
+                    Betalning <br>
+                    Vi erbjuder betalning via Klarna - Kort, Faktura, Delbetalning, Internetbank. <br><br>
+                    
+                    Leveranstid <br>
+                    Vi packar din order så fort som möjligt. Då vi är ett litet företag med få anställda så kan vi inte garantera att din vara packas dagen efter. Vår målsättning är att packa och skicka din vara SENAST tre arbetsdagar efter din beställning. Leveranstiden är satt mellan 3-5 dagar från att du gjort din beställning. Vi ansvarar ej för DHL:s eventuella förseningar. <br><br>
+                    
+                    Leveransförsening <br>
+                    Om leveransförsening av någon anledning uppstår har du möjlighet att häva köpet utan kostnader. Om ett lagersaldo misstämmer kommer vi att kontakta dig omgående. Vi kommer även att kontakta dig om din vara ej kan skickas inom vår normala leveranstid. <br><br>
+                    
+                    Leveransvillkor & leveranssätt <br>
+                    Våra varor levereras av DHL, från vårt huvudkontor i Stockholm. <br><br>
+                    
+                    Frakt <br>
+                    Vi skickar alla ordrar över 500 kronor fraktfritt inom Sverige. Vid order under 500 kronor kostar frakten 49 kronor. <br><br>
+                    
+                    Garanti <br>
+                    När du köper en vara från oss vill vi att du som kund ska vara nöjd. Om varan inte håller förväntad kvalitet eller om du på annat sätt är missnöjd med din vara, vänligen kontakta oss så ska vi göra vårt bästa för att hjälp dig. <br><br>
+                    
+                    Ångerrätt och återbetalning <br>
+                    Som kund hos oss har du 14 dagars öppet köp (från datum för uthämtad order) utan speciell anledning. Observera att du måste ha lämnat in din retur inom 14 dagar för att öppet köp ska gälla.
+                    
+                    Du har rätt att undersöka samt prova den köpta varan. Om en returnerad vara har använts eller hanterats i större utsträckning än som varit nödvändigt för detta, har vi rätt till ett avdrag för värdeminskningen på varan som kan uppgå till varans fullständiga pris.
+                    
+                    Som kund måste du alltid kontakta Konini Shop innan eventuell retur. Vill du returnera en vara skickar vi dig en retursedel från DHL, paketet lämnar du sen in på närmaste DHL-ombud. Returfrakten kostar 49 kronor och dras från beloppet vi återbetalar dig för din returnerade vara. Observera att vi måste ta emot och godkänna returen för att återbetalning ska ske. <br>
+                    
+                    
+                    Vill du byta till en annan vara genomför du ett nytt köp i webshopen. <br><br>
+                    
+                    Vi ansvarar ej för borttappade paket eller eventuella skador på returen som skett under transport. <br><br>
+                    
+                    Reklamationer <br>
+                    Felaktig eller skadad vara skall reklameras inom skälig tid efter det att du har upptäckt felet eller skadan. Om du reklamerar inom två månader räknas det alltid som att det skett i rätt tid. Kontakta alltid Konini Shop innan eventuell retur. Skicka aldrig varor i retur innan du har talat med oss.
+                    
+                    Tvist <br>
+                    Vi följer Allmänna reklamationsnämndens rekommendationer vid eventuell tvist. <br><br>
+                    
+                    Outlösta paket <br>
+                    Outlösta paket debiteras en avgift på 250kr för att täcka våra kostnader. <br><br>
+                    
+                    Personuppgiftspolicy <br>
+                    Din personliga integritet är viktig för oss på Konini Shop. När du lämnar dina personuppgifter till oss vill vi att du ska kunna känna dig helt trygg. Hos Konini Shop behandlas dessa i enlighet med gällande GDPR lagstiftning. All personlig information som du lämnar till oss används bara inom företaget för att kunna ge dig bra service vid dina återkommande köp. Den kan också användas av oss för att skicka dig specialerbjudanden från Konini Shop. Vi värdesätter din tillit till oss och är glada över att ha dig som kund och därför respekterar vi självklart din personliga integritet. De uppgifter som vi lagrar i vår kunddatabas är för- och efternamn, ev. företag, adress, e-postadress & telefonnummer. Vi garanterar att ingen obehörig tar del av dina personuppgifter. Personuppgifterna lämnar aldrig företaget. Vi lånar inte ut, hyr ut, leasar ut eller säljer några personuppgifter till andra företag eller privatpersoner. Du har rätt att när som helst begära information om de personuppgifter vi har om dig. Du har rätt att begära rättelse av dina personuppgifter om de är felaktiga, inbegripet rätten att komplettera ofullständiga personuppgifter. 
+                    
+                    Reservation <br>
+                    Vi reserverar oss mot felaktigheter i innehåll och prislista på webbsidan. <br><br>
+                    
+                    Text-, bild- och videomaterial <br>
+                    Text-, bild- och videomaterial på Konini Shop är skyddat enligt lagen om upphovsrätt och får ej kopieras utan vår tillåtelse. <br><br>
+                    
+                    
+                    
+                    
+                    Orders outside of Sweden <br>
+                    For orders within the European Union a 99 SEK freight charge will be added to your order. For orders over 1000 SEK freight is free of charge. We will use PostNord for your shipment. Delivery time is 5-10 days. 
+                    For orders worldwide a 149 SEK freight charge will be added to your order. For orders over 1500 SEK freight is free of charge. We will use PostNord for your shipment. Delivery time is 7-12 days.
+                    
+                    Local Taxes <br>
+                    Please note that local charges (sales tax, customs duty) may occur, depending on your region and local customs duties. These charges are at the customers own expense. </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="support">
+                <h3>SUPPORT</h3>
+                <ul class="support-box">
+                    <li><a href="kontakt.html">Kontakta oss</a></li>
+                    <li><a href="#">Köpvillkor</a></li>
+                    <li><a href="storlek.html">Storleksguide</a></li>
+                    <li><a href="#">Kundservice</a></li> <!-- gör klickbara -->
+                </ul>
+            </div>
+            <div class="about">
+                <h3>OM KONINI</h3>
+                <ul class="about-box">
+                    <li><a href="#">Jobba hos oss</a></li>
+                    <li><a href="about.html">Vår verksamhet</a></li> <!-- gör klickbara -->
+                </ul>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="https://www.instagram.com/koninishop" target="_blank"><i class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/?lang=sv" target="_blank"><i class='bx bxl-twitter'></i></a>
+            <a href="https://www.facebook.com/koninishop.se" target="_blank"><i class='bx bxl-facebook-square'></i></a> <!-- gör klickbara -->
+        </div>
+
+    </footer>
+    </div>
+</body>
