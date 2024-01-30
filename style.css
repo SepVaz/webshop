@@ -512,6 +512,10 @@ footer {
     display: block;
   }
 
+  div.nav-icons {
+    padding-right: 0px;
+  }
+
   .info-bar,
   .info-bar2 {
     font-size: 14px;
@@ -533,6 +537,18 @@ footer {
 
   .frakt {
     white-space: pre;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .cart-panel,
+  .user-panel {
+    position: fixed;
+    top: 0;
+    right: -1000%;
+    width: 300px;
+    height: 100%;
+    z-index: 1000;
   }
 }
 
@@ -580,6 +596,11 @@ footer {
   .info-bar2 {
     font-size: 14px;
   }
+
+  div.nav-icons {
+    padding-right: 0px;
+  }
+
 
   .card-container .cards img {
     width: 200px;
